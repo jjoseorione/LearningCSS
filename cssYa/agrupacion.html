@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+        <title>Curso CSS - Agrupación de CSS</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/style.css" >
+        <link rel="shortcut icon" href="../images/icon.ico">
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+        <div class="divfondo">
+    	    <h1>Agrupación de varios elementos HTML con una misma regla de estilo</h1>
+
+    	    <h2>Descripción</h2>
+    	    <p>
+    		    Esta característica nos permite ahorrar la estructura de reglas duplicadas para diferentes elementos de HTML. Para que una misma regla aplique a más de un elemento HTML es suficiente con agruparlos por comas.
+    	    </p>
+
+    	    <h2>Subtítulo</h2>
+    	    <p>
+    	        Ejemplo de código donde se usa la misma regla para :
+    	        <div class="divcodigo">
+                    &lt;!DOCTYPE html><br>
+                    &lt;html><br>
+                    &lt;head><br>
+                    <br>
+                    &lt;title>&lt;/title><br>
+                    &lt;meta charset="UTF-8"><br>
+                    &lt;style><br>
+                    h1,h2,h3 {<br>
+                    font-family: sans-serif;<br>
+                    color: #0000ff;<br>
+                    }<br>
+                    &lt;/style>
+                    <br>
+                    &lt;/head><br>
+                    &lt;body><br>
+                    <br>
+                    &lt;h1>Título de nivel 1&lt;/h1><br>
+                    &lt;h2>Título de nivel 2&lt;/h2><br>
+                    &lt;h3>Título de nivel 3&lt;/h3><br>
+                    <br>
+                    &lt;/body><br>
+                    &lt;/html>
+    	        </div>
+    	    </p>
+            <p>
+                Vista previa:
+                <div class="htmldefault" style="padding: 0px" >
+                    <iframe src="agrupacion1.html" title="Vista previa" width="100%" height="400"></iframe>
+                </div>
+            </p>
+        <a href="./" class="aboton">Volver al índice</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+        <title>Curso CSS - Fuentes</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/style.css" >
+        <link rel="shortcut icon" href="../images/icon.ico">
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+        <div class="divfondo">
+    	    <h1>Propiedades relacionadas a fuentes</h1>
+
+    	    <h2>Descripción</h2>
+    	    <p>
+    		    Las propiedades relacionadas a las fuentes más importantes en CSS son las siguientes:
+                <ul>
+                    <li>
+                        <strong>font-family</strong> Define la fuente que se aplicará al elemento HTML. Para que puedan visualizarse adecuadamente, las fuentes usadas deberán estar instaladas en el dispositivo en el que se muestra la página (o en su defecto ser cargadas en la página, de manera similar que una imagen). Las fuentes que se encuentran por default en todos los dispositivos son serif, sans-serif y monospace. Se puede agregar más de una fuente, en cuyo caso el navegador usará la primera que esté disponible en el dispositivo.
+                    </li>
+                    <li>
+                        <strong>font-size</strong> Define el tamaño de la fuente. Entre otras formas (unidades) podemos definirlo en píxeles.
+                    </li>
+                    <li>
+                        <strong>font-style</strong> Podemos indicar los valores normal, italic y oblique.
+                    </li>
+                    <li>
+                        <strong>font-weight</strong> Entre otros, podemos indicar los valores normal, bold, bolder, lighter.
+                    </li>
+                    <li>
+                        <strong>font-variant</strong> Font variant permite elegir en qué forma se ven las minúsculas en un texto. Con la opción "normal" las veremos como de costubre, mientras que con la opción "small-caps" las minúsculas se muestran como mayúsculas pequeñas.
+                    </li>
+                </ul>
+    	    </p>
+
+    	    <h2>Ejemplos</h2>
+    	    <p>
+    	        Se mostrarán distintos ejemplos de uso de fuentes. El código es el siguiente:
+    	        <div class="divcodigo">
+	                &lt;html><br>
+	                &lt;head><br>
+                    <br>
+	                &lt;title>&lt;/title><br>
+	                &lt;meta charset="UTF-8"><br>
+                    &lt;style><br>
+                    h2 {<br>
+                    color: blue;<br>
+                    font-variant: small-caps;<br>
+                    }<br>
+                    h3{<br>
+                    font-family: sans-serif;<br>
+                    font-size:18px;<br>
+                    font-weight: bold;<br>
+                    }<br>
+                    h4{<br>
+                    font-family: serif;<br>
+                    font-size:12px;<br>
+                    font-style: oblique;<br>
+                    }<br>
+                    h5{<br>
+                    font-family: monospace;<br>
+                    font-size:16px;<br>
+                    font-style: oblique;<br>
+                    font-weight: bold;<br>
+                    }<br>
+
+                    &lt;/style><br>
+
+                    <br>
+	                &lt;/head><br>
+	                &lt;body><br>
+                    <br>
+                    &lt;h2>
+                    Título de nivel 2 en fuente serif, color azul y variante small-caps
+                    &lt;/h2><br>
+
+                    &lt;h3><br>
+                    Título de nivel 3 con fuente sans-serif, de 18 píxeles y peso bold (negrita).<br>
+                    &lt;/h3><br>
+
+                    &lt;h4><br>
+                    Título de nivel 4 definido con fuente serif, de 18 píxeles y estilo oblique.<br>
+                    &lt;/h4><br>
+
+                    &lt;h5><br>
+                    Título de nivel 5 definido con fuente monospace, de 16 píxeles, peso bold y estilo oblique.<br>
+                    &lt;/h5><br>
+
+                    &lt;/div>
+                    <br>
+	                &lt;/body><br>
+	                &lt;/html>
+    	        </div>
+    	    </p>
+            <p>
+                Vista previa:
+                <div class="htmldefault" style="padding: 0;">
+                    <iframe src="fuentes1.html" title="Vista Previa" width="100%" height="400"></iframe>
+                </div>
+            </p>
+        <a href="./" class="aboton">Volver al índice</a>
+        </div>
+    </body>
+</html>

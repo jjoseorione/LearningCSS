@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+        <title>Curso CSS - Definición de varias reglas</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/style.css" >
+        <link rel="shortcut icon" href="../images/icon.ico">
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+        <div class="divfondo">
+    	    <h1>Definición de varias reglas para un mismo elemento HTML</h1>
+
+    	    <h2>Subtítulo</h2>
+    	    <p>
+    		    En ocasiones es necesario desglosar la inicialización de propiedades en distintas reglas. Esto debido a que podemos crear reglas generales que apliquen a varios elementos y luego ir creando reglas más particulares que sólo apliquen a algunos o a sólo un elemento.
+            </p>
+            <p>
+                Por ejemplo, supongamos que queremos que todos los elementos h de título usen fuente sans-serif, pero queremos que únicamente el elemento h1 sea de color azul. Se debería crear una regla general para todos los títulos y luego hacer una particular para el título h1.
+    	    </p>
+
+    	    <h2>Subtítulo</h2>
+    	    <p>
+    	        Tomando el ejemplo de los títulos descritos anteriormente, se tendría el siguiente código:
+    	        <div class="divcodigo">
+                    &lt;!DOCTYPE html><br>
+	                &lt;html><br>
+	                &lt;head><br>
+                    <br>
+	                &lt;title>&lt;/title><br>
+	                &lt;meta charset="UTF-8"><br>
+                    &lt;style><br>
+                    h1, h2, h3, h4, h5, h6{<br>
+                        font-family: sans-serif;<br>
+                    }<br>
+                    h1{<br>
+                        color: blue;<br>
+                    }<br>
+                    &lt;/style><br>
+                    <br>
+	                &lt;/head><br>
+	                &lt;body><br>
+                    <br>
+                    &lt;h1>Título de nivel 1&lt;/h1><br>
+                    &lt;h2>Título de nivel 2&lt;/h2><br>
+                    &lt;h3>Título de nivel 3&lt;/h3><br>
+                    &lt;h4>Título de nivel 4&lt;/h4><br>
+                    &lt;h5>Título de nivel 5&lt;/h5><br>
+                    &lt;h6>Título de nivel 6&lt;/h6><br>
+                    <br>
+	                &lt;/body><br>
+	                &lt;/html>
+    	        </div>
+    	    </p>
+            <p>
+                Vista previa:
+                <div class="htmldefault" style="padding: 0;">
+                    <iframe src="variasReglas1.html" width="100%" height="400" title="Vista Previa"></iframe>
+                </div>
+            </p>
+        <a href="./" class="aboton">Volver al índice</a>
+        </div>
+    </body>
+</html>
