@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+        <title>Curso CSS - Texto parte II</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/style.css" >
+        <link rel="shortcut icon" href="../images/icon.ico">
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+        <div class="divfondo">
+    	    <h1>Más propiedades relacionadas al texto</h1>
+
+    	    <h2>Descripción</h2>
+    	    <p>
+    		    Otras propiedades útiles relacionadas al texto son las siguientes:
+                <ul style="list-style-type: square;">
+                    <li><strong>letter-spacing:</strong> Permite indicar el espaciado que debe haber entre caracteres.</li>
+                    <li><strong>word-spacing:</strong> Permite indicar el espaciado que debe haber entre palabras.</li>
+                    <li><strong>text-indent:</strong> Esta propiedad define la sangría que debe agregarse a la primera línea de un bloque de texto. Se pueden agregar valores negativos para que le sangría sea negativa (a la izquierda).</li>
+                    <li>
+                        <strong>text-transform:</strong>. Esta propiedad manipula la forma en la que se muestran mayúsculas y minúsculas en un bloque de texto. Se pueden tomar alguno de los siguientes valores:
+                        <ul>
+                            <li><strong>capitalize</strong>: Inicia con mayúscula la primera letra de cada palabra.</li>
+                            <li><strong>lowercase</strong>: Convierte a minúsculas todas las letras del texto.</li>
+                            <li><strong>uppercase</strong>: Convierte a mayúsculas todas las letras del texto.</li>
+                            <li><strong>none</strong>: No provoca cambios.</li>
+                        </ul>
+                    </li>
+                </ul> 
+    	    </p>
+
+    	    <h2>Ejemplo</h2>
+    	    <p>
+    	        Ejemplo en el que se usan las propiedades descritas previamente:
+    	        <div class="divcodigo">
+                    &lt;!DOCTYPE html><br>
+	                &lt;html><br>
+	                &lt;head><br>
+                    <br>
+	                &lt;title>&lt;/title><br>
+	                &lt;meta charset="UTF-8"><br>
+                    <br>
+                    &lt;style><br>
+                    h1<br>
+                    {<br>
+                        letter-spacing: 10px;<br>
+                        word-spacing: 30px;<br>
+                        text-transform: capitalize;<br>
+                    }<br>
+                    h2<br>
+                    {<br>
+                        word-spacing: 10px;<br>
+                        text-transform: uppercase;<br>
+                    }<br>
+                    p<br>
+                    {<br>
+                        text-indent: 50px;<br>
+                    }<br>
+                    &lt;/style><br>
+                    <br>
+	                &lt;/head><br>
+	                &lt;body><br>
+
+                    <br>
+                    &lt;h1>Esto es un título de nivel 1&lt;/h1><br>
+                    &lt;h2>Esto es un título de nivel 2&lt;/h2><br>
+                    &lt;p><br>
+                        Esto es un párrafo. Puede notarse que únicamente la primera línea de texto tiene la sangría especificada, mientras que el resto de las líneas permanece a raya al inicio del renglón. De igual forma, puede notarse que el título de nivel 1 capitaliza todas las palabras y hace el espaciado correcto entre palabras y entre letras. Mientras tanto, el título de nivel 2 convierte todo el texto en mayúsculas y agrega el espaciado especificado entre palabras.<br>
+                    &lt;/p><br>
+                    <br>
+	                &lt;/body><br>
+	                &lt;/html>
+    	        </div>
+    	    </p>
+            <p>
+                Vista previa:
+                <div class="htmldefault" style="padding: 0px;">
+                    <iframe src="textoII1.html" width="100%" height="400"></iframe>
+                </div>
+            </p>
+        <a href="./" class="aboton">Volver al índice</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+        <title>Curso CSS - Herencia</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/style.css" >
+        <link rel="shortcut icon" href="../images/icon.ico">
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+        <div class="divfondo">
+    	    <h1>Herencia de propiedades de estilo</h1>
+
+    	    <h2>Descripción</h2>
+    	    <p>
+    		    CSS significa <em>Hojas de Estilo en Cascada</em>, lo que quiere decir justamente que la forma en que se definen los estilos es en forma de cascada. Esto significa que podemos ir de lo general a lo particular y posteriormente a lo específico. por ejemplo el selector más general en CSS es llamado <em>Selector global</em> y se define con un asterísco (*). Posteriormente tenemos el selector del elemento body, y depués estarían los elementos h1, h2, h3, p, div, etc., según cómo se encuentren anidados.
+    	    </p>
+            <p>
+                La utilidad de las hojas en cascada radica en la herencia que se logra. Por ejemplo, podríamos definir una regla CSS que indique que todo el elemento body debe llevar fuente monospace. Al hacer esto, ése será el estándar para todo el elemento body y la única forma de elegir otro tipo de fuente (por ejemplo, serif) será hacerlo específicamente en el elemento deseado. De la misma manera, cualquier elemento HTML hereda las reglas de todos sus ancestros y la única forma de cambiarlos es hacerlo de forma específica en dicho elemento.
+            </p>
+
+    	    <h2>Ejemplo</h2>
+    	    <p>
+    	        Ejemplo de herencia en CSS. Como puede notarse, se le dan algunas reglas de estilo al elemento *, lo que hará que todos los elementos hijos sigan dichas reglas. Sin embargo, a algunos títulos se les ha permitido tener alguna regla específica:
+    	        <div class="divcodigo">
+                    &lt;!DOCTYPE html><br>
+	                &lt;html><br>
+	                &lt;head><br>
+                    <br>
+	                &lt;title>&lt;/title><br>
+	                &lt;meta charset="UTF-8"><br>
+                    &lt;style><br>
+                    *<br>
+                    {<br>
+                        color: blue;<br>
+                        font-family: monospace;<br>
+                        font-size: 16px;<br>
+                        font-weight: normal;<br>
+                    }<br>
+                    h2<br>
+                    {<br>
+                        font-size: 20px;<br>
+                    }<br>
+                    h3<br>
+                    {<br>
+                        color: tomato;<br>
+                    }<br>
+                    h4<br>
+                    {<br>
+                        font-family: sans-serif;<br>
+                    }<br>
+                    &lt;/style><br>
+                    <br>
+	                &lt;/head><br>
+	                &lt;body><br>
+                    <br>
+                    &lt;h1>Título de nivel 1 con todas las reglas de *&lt;/h1><br>
+                    &lt;h2>Título de nivel 2 con su propia regla de tamaño&lt;/h2><br>
+                    &lt;h3>Título de nivel 3 con su propia regla de color&lt;/h3><br>
+                    &lt;h4>Título de nivel 4 con su propia regla de fuente&lt;/h4><br>
+                    &lt;p><br>
+                        Párrafo con todas las reglas de *<br>
+                    &lt;/p><br>
+                    <br>
+	                &lt;/body><br>
+	                &lt;/html>
+    	        </div>
+    	    </p>
+            <p>
+                Vista previa:
+                <div class="htmldefault" style="padding: 0;">
+                    <iframe src="herencia1.html" width="100%" height="400"></iframe>
+                </div>
+            </p>
+        <a href="./" class="aboton">Volver al índice</a>
+        </div>
+    </body>
+</html>

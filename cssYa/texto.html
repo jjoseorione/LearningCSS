@@ -15,17 +15,17 @@
     	    <p>
     		    Las propiedades más importantes relacionadas al texto son las siguientes:
                 <ul>
-                    <li><strong>color</strong> </li>
+                    <li><strong>color:</strong> Sirve para definir el color del que se mostrrá el texto del elemento. El color puede ser definido en distintos formatos que se verán más adelante. El más sencillo es usar nombres de colores comunes en inglés como "blue", "green", "black", "orange", "tomato", entre otros.</li>
 
-                    <li><strong>text-align</strong> </li>
+                    <li><strong>text-align:</strong> Sirve para definir la forma en la que queremos que el texto esté alineado. Los valores que puede tomar esta propiedad son: <em>left, right, center</em> y <em> justify</em>.</li>
 
-                    <li><strong>text-decoration</strong> </li>
+                    <li><strong>text-decoration:</strong> Sirve para que el texto aparezca tachado, subrayado o con una línea encima. Los valores que puede tomar esta propiedad son: <em>none, underline, overline</em> y <em>line-through</em>.</li>
                 </ul>
     	    </p>
 
     	    <h2>Subtítulo</h2>
     	    <p>
-    	        Ejemplo de código:
+    	        Ejemplo de uso de propiedades de texto.
     	        <div class="divcodigo">
                     &lt;!DOCTYPE html><br>
 	                &lt;html><br>
@@ -34,13 +34,32 @@
 	                &lt;title>&lt;/title><br>
 	                &lt;meta charset="UTF-8"><br>
                     &lt;style><br>
-
-                    &lt;/style>
+                    h1 <br>
+                    {<br>
+                        color: blue;<br>
+                        text-align: left;<br>
+                        text-decoration: underline;<br>
+                    }<br>
+                    h2<br>
+                    {<br>
+                        color: green;<br>
+                        text-align: center;<br>
+                        text-decoration: overline;<br>
+                    }<br>
+                    h3 <br>
+                    {<br>
+                        color: tomato;<br>
+                        text-align: right;<br>
+                        text-decoration: line-through;<br>
+                    }<br>
+                    &lt;/style><br>
                     <br>
 	                &lt;/head><br>
 	                &lt;body><br>
                     <br>
-                    Hola mundo<br>
+                    &lt;h1>Título h1&lt;/h1><br>
+                    &lt;h2>Título h2&lt;/h2><br>
+                    &lt;h3>Título h3&lt;/h3><br>
                     <br>
 	                &lt;/body><br>
 	                &lt;/html>
@@ -48,8 +67,8 @@
     	    </p>
             <p>
                 Vista previa:
-                <div class="htmldefault">
-                    Hola mundo
+                <div class="htmldefault" style="padding: 0;">
+                    <iframe src="texto1.html" title="Vista previa" width="100%" height="400"></iframe>
                 </div>
             </p>
         <a href="./" class="aboton">Volver al índice</a>
