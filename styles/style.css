@@ -40,6 +40,10 @@ h2, h3, h4, h5, h6
     font-family: serif; 
     padding:2em;
 }
+.htmldefault h2
+{
+    text-indent: initial;
+}
 a
 {
     text-decoration: none; 

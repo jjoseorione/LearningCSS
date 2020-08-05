@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+        <title>Curso CSS - Combinadores</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/style.css" >
+        <link rel="shortcut icon" href="../images/icon.ico">
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+        <div class="divfondo">
+    	    <h1>Combinadores en CSS</h1>
+
+    	    <h2>Combinadores</h2>
+    	    <p>
+    		    Los combinadores en CSS especifican la forma en que se pueden relacionar dos o más selectores para crear así un selector más específico. Existen 4 combinadores diferentes en CSS.
+                <ul>
+                    <li>Descendiente (espacio)</li>
+                    <li>Hijo (>)</li>
+                    <li>Hermano adyacente (+)</li>
+                    <li>Hermano menor (~)</li>
+                </ul> 
+    	    </p>
+
+            <h2>Combinador descendiente</h2>
+            <h3>Descripción</h3>
+            <p>
+                El combinador de descendiente sirve para indicar que todos los elementos específicos que sean hijos de otro elemento específico deben cumplir dicha regla. Para especificar la regla que deberá seguir el descendiente se deben de especificar el elemento ancestro y el elemento descendiente separados por un espacio.
+            </p>
+            <h3>Ejemplo</h3>
+            <p>
+                En este ejemplo se crea una regla para elementos p que sean descendientes de elementos div. El código es el siguiente.
+                <div class="divcodigo">
+                    &lt;!DOCTYPE html><br>
+                    &lt;html><br>
+                    &lt;head><br>
+                    <br>
+                    &lt;title>&lt;/title><br>
+                    &lt;meta charset="UTF-8"><br>
+                    &lt;style><br>
+                    div p<br>
+                    {<br>
+                        background-color: yellow;<br>
+                    }<br>
+                    &lt;/style><br>
+                    <br>
+                    &lt;/head><br>
+                    &lt;body><br>
+                    <br>
+                    &lt;p>Párrafo 0, no está dentro del div.&lt;/p><br>
+                    &lt;div><br>
+                        &lt;p>Párrafo 1, dentro del div.&lt;/p><br>
+                        &lt;p>Párrafo 2, dentro del div.&lt;/p><br>
+                        &lt;span>&lt;p>Párrafo 3, dentro de un span y dento del div.&lt;/p>&lt;/span><br>
+                    &lt;/div><br>
+                        &lt;p>Párrafo 4, no está dentro del div.&lt;/p><br>
+                        &lt;p>Párrafo 5, no está dentro del div.&lt;/p><br>
+                        &lt;p>Párrafo 6, no está dentro del div.&lt;/p><br>
+                    <br>
+                    &lt;/body><br>
+                    &lt;/html>
+                </div>
+            </p>
+            <p>
+                Vista previa:
+                <div class="htmldefault" style="padding: 0;">
+                    <iframe src="combinadores1.html" width="100%" height="400"></iframe>
+                </div>
+            </p>
+
+            <h2>Combinador hijo</h2>
+            <h3>Descripción</h3>
+            <p>
+                El combinador de hijo sirve para especificar la regla de estilo que recibirá un elemento específico que sea hijo de otro elemento específico. Un elemento que es hijo de otro es aquél que es descendiente directo. Para especificar la regla de estilo que tendrá el elemento hijo, se deben específicar el elemento padre y el elemento hijo separados por un símbolo mayor que (>).
+            </p>
+            <h3>Ejemplo</h3>
+            <p>
+                En este ejemplo se crea una regla para elementos p que sean hijos de elementos div. Se debe notar que el tercer párrafo es descendiene del div, pero no es su hijo y por eso no se le aplica la regla de estilo. El código es el siguiente.
+                <div class="divcodigo">
+                    &lt;!DOCTYPE html><br>
+                    &lt;html><br>
+                    &lt;head><br>
+                    <br>
+                    &lt;title>&lt;/title><br>
+                    &lt;meta charset="UTF-8"><br>
+                    &lt;style><br>
+                    div > p<br>
+                    {<br>
+                        background-color: yellow;<br>
+                    }<br>
+                    &lt;/style><br>
+                    <br>
+                    &lt;/head><br>
+                    &lt;body><br>
+                    <br>
+                    &lt;p>Párrafo 0, no está dentro del div.&lt;/p><br>
+                    &lt;div><br>
+                        &lt;p>Párrafo 1, dentro del div.&lt;/p><br>
+                        &lt;p>Párrafo 2, dentro del div.&lt;/p><br>
+                        &lt;span>&lt;p>Párrafo 3, dentro de un span y dentro del div.&lt;/p>&lt;/span><br> 
+                    &lt;/div><br>
+                        &lt;p>Párrafo 4, no está dentro del div.&lt;/p><br>
+                        &lt;p>Párrafo 5, no está dentro del div.&lt;/p><br>
+                        &lt;p>Párrafo 6, no está dentro del div.&lt;/p><br>
+                    <br>
+                    &lt;/body><br>
+                    &lt;/html>
+                </div>
+            </p>
+            <p>
+                Vista previa:
+                <div class="htmldefault" style="padding: 0;">
+                    <iframe src="combinadores2.html" width="100%" height="400"></iframe>
+                </div>
+            </p>
+
+
+            <h2>Combinador hermano adyacente</h2>
+            <h3>Descripción</h3>
+            <p>
+                El combianador hermano adyacente sirve para especificar la regla que recibirá un elemento específico que sea hermano y sea adyacente a otro elemento específico. Es decir, que sea hijo del mismo padre y que se encuentre uno a continuación del otro. Para especificar la regla de estilo que tendrá el hermano adyacente se debe especificar el elemento hermano mayor y el elemento hermano menor separados por un símbolo de suma (+).
+            </p>
+            <h3>Ejemplo</h3>
+            <p>
+                En este ejemplo se crea una regla para elementos p que sean hermanos adyacentes de elementos div.
+                <div class="divcodigo">
+                    &lt;!DOCTYPE html><br>
+                    &lt;html><br>
+                    &lt;head><br>
+                    <br>
+                    &lt;title>&lt;/title><br>
+                    &lt;meta charset="UTF-8"><br>
+                    &lt;style><br>
+                    div + p<br>
+                    {<br>
+                        background-color: yellow;<br>
+                    }<br>
+                    &lt;/style><br>
+                    <br>
+                    &lt;/head><br>
+                    &lt;body><br>
+                    <br>
+                    &lt;p>Párrafo 0, no está dentro del div.&lt;/p><br>
+                    &lt;div><br>
+                        &lt;p>Párrafo 1, dentro del div.&lt;/p><br>
+                        &lt;p>Párrafo 2, dentro del div.&lt;/p><br>
+                        &lt;span>&lt;p>Párrafo 3, dentro de un span y dentro del div.&lt;/p>&lt;/span><br> 
+                    &lt;/div><br>
+                    &lt;p>Párrafo 4, no está dentro del div.&lt;/p><br>
+                    &lt;p>Párrafo 5, no está dentro del div.&lt;/p><br>
+                    &lt;p>Párrafo 6, no está dentro del div.&lt;/p><br>
+                    <br>
+                    &lt;/body><br>
+                    &lt;/html>
+                </div>
+            </p>
+            <p>
+                Vista previa:
+                <div class="htmldefault" style="padding: 0;">
+                    <iframe src="combinadores3.html" width="100%" height="400"></iframe>
+                </div>
+            </p>
+
+            <h2>Combinador hermano menor</h2>
+            <p>
+                El combinador hermano menor sirve para especificar la regla que deberá deseguir un elemento específico que es hermano menor de otro elemento específico. Cuando se dice que un elemento es hermano menor de otro, significa que son ambos hijos de un mismo padre y que el menor aparece o está definido después que el mayor. Para especificar la regla de estilo que tendrá el hermano menor, se debe especificar el hermano mayor seguido del hermano menor y separados por una virguilla (~).
+            </p>
+            <h3>Ejemplo</h3>
+            <p>
+                En este ejemplo se crea una regla para elementos p que sean hermanos adyacentes de elementos div.
+                <div class="divcodigo">
+                    &lt;!DOCTYPE html><br>
+                    &lt;html><br>
+                    &lt;head><br>
+                    <br>
+                    &lt;title>&lt;/title><br>
+                    &lt;meta charset="UTF-8"><br>
+                    &lt;style><br>
+                    div ~ p<br>
+                    {<br>
+                        background-color: yellow;<br>
+                    }<br>
+                    &lt;/style><br>
+                    <br>
+                    &lt;/head><br>
+                    &lt;body><br>
+                    <br>
+                    &lt;p>Párrafo 0, no está dentro del div.&lt;/p><br>
+                    &lt;div><br>
+                        &lt;p>Párrafo 1, dentro del div.&lt;/p><br>
+                        &lt;p>Párrafo 2, dentro del div.&lt;/p><br>
+                        &lt;span>&lt;p>Párrafo 3, dentro de un span y dentro del div.&lt;/p>&lt;/span><br> 
+                    &lt;/div><br>
+                    &lt;p>Párrafo 4, no está dentro del div.&lt;/p><br>
+                    &lt;p>Párrafo 5, no está dentro del div.&lt;/p><br>
+                    &lt;p>Párrafo 6, no está dentro del div.&lt;/p><br>
+                    <br>
+                    &lt;/body><br>
+                    &lt;/html>
+                </div>
+            </p>
+            <p>
+                Vista previa:
+                <div class="htmldefault" style="padding: 0;">
+                    <iframe src="combinadores4.html" width="100%" height="400"></iframe>
+                </div>
+            </p>
+        <a href="./" class="aboton">Volver al índice</a>
+        </div>
+    </body>
+</html>

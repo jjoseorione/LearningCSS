@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+        <title>Curso CSS - Clases CSS</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/style.css" >
+        <link rel="shortcut icon" href="../images/icon.ico">
+        <style>
+            .resaltado
+            {
+                background-color: #39ff14;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+        <div class="divfondo">
+    	    <h1>Definición de estilos por medio de clases</h1>
+
+    	    <h2>Descripción</h2>
+    	    <p>
+    		    En CSS existe una herramiente muy útil llamada "clase". Estas clases no deben confundirse con las de la programación orientada a objetos, aunque son muy parecidas.
+    	    </p>
+            <p>
+                Hasta este momento sólo se ha estudiado la definición de estilos a elementos específicos de html (como *, body, p, h1, h2, div, etc.). Las clases sirven para crear estilos que pueden ser aplicadas después a cualquier elemento. De esta manera, no es necesario globalizar, por ejemplo, todos los elementos p de una sola manera y en su lugar podemos aplicar el estilo definido en una clase sólo a los elementos p que queramos modificar; de igual manera, el estilo definido en esa misma clase puede ser utilizado en otros elementos de HTML diferentes a p.
+            </p>
+            <p>
+                Para definir una clase solamente se necesita escribir en nuestra hoja de estilos el nombre que queremos que lleve nuestra clase antecedido por un punto, sin espacios. En seguida abrimos llaves y podemos definir nuestros estilos. Para invocar una clase en un elemento HTML sebe especificarse el atributo class="nombreClase" Las clases pueden usarse para definir estilos simples o complejos.
+            </p>
+
+    	    <h2>Ejemplo</h2>
+    	    <p>
+    	        En este ejemplo se crerá una clase llamada "resaltado" que servirá para resaltar texto. El texto será resaltado poniendo fondo verde y fuente gruesa (negrita).
+    	        <div class="divcodigo">
+                    &lt;!DOCTYPE html><br>
+	                &lt;html><br>
+	                &lt;head><br>
+                    <br>
+	                &lt;title>&lt;/title><br>
+	                &lt;meta charset="UTF-8"><br>
+                    &lt;style><br>
+                    .resaltado<br>
+                    {<br>
+                        background-color: #39ff14;<br>
+                        font-weight: bold;<br>
+                    }<br>
+                    &lt;/style><br>
+                    <br>
+	                &lt;/head><br>
+	                &lt;body><br>
+                    <br>
+                    &lt;h2>Título del texto con &lt;span class="resaltado">palabras resaltadas&lt;/span>&lt;/h2><br>
+
+                    &lt;p>El siguiente texto tiene algunas palabras &lt;span class="resaltado">resaltadas&lt;/span> para mostrar la forma en que funciona la clase llamada &lt;span class="resaltado">resaltado&lt;/span>&lt;/p>
+
+                    <br>
+	                &lt;/body><br>
+	                &lt;/html>
+    	        </div>
+    	    </p>
+            <p>
+                Vista previa:
+                <div class="htmldefault">
+                    <h2>Título del texto con <span class="resaltado">palabras resaltadas</span></h2>
+
+                    <p>
+                        El siguiente texto tiene algunas palabras <span class="resaltado">resaltadas</span> para mostrar la forma en que funciona la clase llamada <span class="resaltado">resaltado</span>.
+                    </p>
+                </div>
+            </p>
+        <a href="./" class="aboton">Volver al índice</a>
+        </div>
+    </body>
+</html>
