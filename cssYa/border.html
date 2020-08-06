@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+        <title>Curso CSS - Bordes</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/style.css" >
+        <link rel="shortcut icon" href="../images/icon.ico">
+        <style>
+            #titulo
+            {
+                border-width: 15px 5px;
+                border-style: dotted dashed;
+                border-color: green red blue purple;
+            }
+            .pregunta
+            {
+                background-color: yellow;
+                border: 2px solid black;
+            }
+            .respuesta
+            {
+                border: 1px dashed black;
+            }
+        </style>
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+        <div class="divfondo">
+    	    <h1>Bordes y sus propiedades CSS</h1>
+
+    	    <h2>Descripción</h2>
+    	    <p>
+    		    Cuando trabajamos con HTML debemos hacernos a la idea de que todo elemento que se crea en un documento o página HTML genera una caja. Hasta ahora sabemos crear elementos (como div, span, h1, h2, p, etc.) y hemos notado que si agregamos la propiedad CSS <em>background-color</em>, todo un bloque rectangular (dentro del que está contenido el texto del elemento) se pinta de dicho color. El borde de ese bloque rectangular o caja es el borde del elemento.
+    	    </p>
+            <p>
+                Es importante tener claras las diferencias entre el <em>border</em>, el <em>margin</em> y el <em>padding</em> del elemento, los cuales se verán más adelante. Por ahora quedémonos con la idea de que el border es el borde de la caja que crea cada elemento en HTML
+            </p>
+            <p>
+                Las propiedades más importantes del borde a las que tenemos acceso son las siguientes:
+                <ul>
+                    <li><strong>border-width</strong>: Define el grosor del borde. Toma valores numéricos en la unidad deseada.</li>
+                    <li>
+                        <strong>border-style</strong>: Define la forma que tendrá el borde. Entre los valores que puede tomar, se encuentran los siguientes:
+                        <ul>
+                            <li><strong>none</strong>: No se muestra el borde.</li>
+                            <li><strong>solid</strong>: Se muestra una línea sólida y contínua.</li>
+                            <li><strong>dotted</strong>: Borde punteado (puntos redondos)</li>
+                            <li><strong>inset</strong>: Se muestra en 3D hacia adentro</li>
+                            <li><strong>outset</strong>: Se muestra en 3D hacia afuera</li>
+                            <li><strong>dashed</strong>: Línea discontínua.</li>
+                            <li><strong>double</strong>: Se muestran dos líneas sólidas y contínuas.</li>
+                            <li><strong>groove</strong>: Se muestra en 3D y doble, parecido al marco de un cuadro.</li>
+                            <li><strong>ridge</strong>: Igual a groove pero con colores invertidos.</li>
+                            <li><strong>dotted solid</strong>: Combinación de dos estilos. En este caso, se especifica que los bordes superior e inferior irán punteados y los costados serán sólidos.</li>
+                            <li><strong>dotted solid double dashed</strong>: Combinación de 4 estilos. El primer valor toma el lugar del borde superior y el resto siguen en sentido de las manecillas del reloj.</li>
+                        </ul>
+                    </li>
+                    <li><strong>border-color</strong>: Especifica el color del que se muestra el borde.</li>
+                </ul>
+            </p>
+            <p>
+                Las propiedades de color y grosor, al igual que estilo, también pueden definirse de forma independiente para cada borde o en parejas para horizontales y verticales. Además, también es posibe definir el border de forma resumida con la propiedad <em>border: tamaño estilo color</em>. De esta forma definimos el tamaño, estilo y color en una sola línea de código CSS, pero sólo podemos definir un sólo color, un sólo estilo y un sólo grosor.
+            </p>
+
+    	    <h2>Ejemplo</h2>
+    	    <p>
+    	        Ejemplo de bordes:
+    	        <div class="divcodigo">
+                    &lt;!DOCTYPE html><br>
+	                &lt;html><br>
+	                &lt;head><br>
+                    <br>
+	                &lt;title>&lt;/title><br>
+	                &lt;meta charset="UTF-8"><br>
+                    &lt;style><br>
+                    #titulo<br>
+                    {<br>
+                        border-width: 15px 5px;<br>
+                        border-style: dotted dashed;<br>
+                        border-color: green red blue purple;<br>
+                    }<br>
+                    .pregunta<br>
+                    {<br>
+                        background-color: yellow;<br>
+                        border: 2px solid black;<br>
+                    }<br>
+                    .respuesta<br>
+                    {<br>
+                        border: 1px dashed black<br>
+                    }<br>
+                    &lt;/style><br>
+                    <br>
+	                &lt;/head><br>
+	                &lt;body><br>
+                    <br>
+                    &lt;h1 id="titulo">Cuestionario&lt;/h1><br>
+                    &lt;p class="pregunta">¿Quién descubrió América?&lt;/p><br>
+                    &lt;p class="respuesta">Cristobal Colón&lt;/p><br>
+                    &lt;p class="pregunta">¿En qué año fue?&lt;/p><br>
+                    &lt;p class="respuesta">1942&lt;/p><br>
+                    <br>
+	                &lt;/body><br>
+	                &lt;/html>
+    	        </div>
+    	    </p>
+            <p>
+                Vista previa:
+                <div class="htmldefault">
+                    <h1 id="titulo">Cuestionario</h1>
+                    <p class="pregunta">¿Quién descubrió América?</p>
+                    <p class="respuesta">Cristobal Colón</p>
+                    <p class="pregunta">¿En qué año fue?</p>
+                    <p class="respuesta">1942</p>
+                </div>
+            </p>
+        <a href="./" class="aboton">Volver al índice</a>
+        </div>
+    </body>
+</html>

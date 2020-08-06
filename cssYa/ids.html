@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+        <title>Curso CSS - IDs CSS</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/style.css" >
+        <link rel="shortcut icon" href="../images/icon.ico">
+        <style>
+            #titulo
+            {
+                text-align: center;
+                color: dodgerblue;
+                font-variant: small-caps;
+            }
+        </style>
+    </head>
+    <!-------------------------------------------------------------->
+    <body>
+        <div class="divfondo">
+    	    <h1>Definición de estilos por medio de IDs</h1>
+
+    	    <h2>Descripción</h2>
+    	    <p>
+    		    Otra herramienta muy útil en CSS son los IDs. Los IDs, al igual que las clases, son una forma de definir estilos sin asignarlos directamente a todo un elemento HTML.
+            </p>
+            <p>
+                La principal diferencia entre un ID y una clase es que los IDs están pensados para ser semánticamente únicos en todo un documento HTML, lo quiere decir que los IDs tienen como propósito que sólo exista un elemento por ID en todo el documento. Esto no quiere decir que asignar un mismo ID a más de un elemento vaya a devolvernos un error, pues en realidad, si asignamos el mismo ID a más de un elemento, ambos podrán visualizarse con los estilos definidos por el ID, pero se considera una mala práctica usarlos de esta manera. Las clases, por otro lado, están pensadas para ser usadas cuantas veces queramos en un mismo documento. 
+            </p>
+            <p>
+                Por ejemplo, si en nuestra página tenemos un menú como cabecera y ese menú será único en cada documento HTML, podemos (y debemos) asignar sus estilos con un ID. En cambio, si tengo el mismo menú más de una vez en el documento, lo mejor será usar una clase.
+            </p>
+            <p>
+                Para definir un ID solamente se necesita escribir en nuestra hoja de estilos el nombre que queremos asignar a nuestro ID antecedido por un símbolo numeral (#), sin espacio en medio. Para invocar un ID en un elemento HTML debemos especificar el atributo <em>id="nombre_id"</em>. Al igual que las clases, los IDs pueden definir estilos simples y complejos.
+            </p>
+
+    	    <h2>Ejemplo</h2>
+    	    <p>
+    	        En este ejemplo se crerá un ID llamado "Título" que servirá para resaltar el título de nivel 1 de una página.
+    	        <div class="divcodigo">
+                    &lt;!DOCTYPE html><br>
+	                &lt;html><br>
+	                &lt;head><br>
+                    <br>
+	                &lt;title>&lt;/title><br>
+	                &lt;meta charset="UTF-8"><br>
+                    &lt;style><br>
+                    #titulo<br>
+                    {<br>
+                        text-align: center;<br>
+                        color: dodgerblue;<br>
+                        font-variant: small-caps;<br>
+                    }<br>
+                    &lt;/style><br>
+                    <br>
+	                &lt;/head><br>
+	                &lt;body><br>
+                    <br>
+                    &lt;h1>Sólo debe existir un título con este ID en todo el documento&lt;/h1><br>
+
+                    &lt;p><br>
+                        Este texto corresponde a un párrafo simple. Si quisiéramos agregar estilos, podemos usar clases para así hace uso de los mismos estilos en distintos párrafos. De esta manera, no se rompería la semática de ID único.<br>
+                    &lt;/p><br>
+                    &lt;p><br>
+                        Sin embargo, el ID definido para el título sólo debe usarse una vez. Usarlo más de una vez se consideraría erróneo y no es buena práctica. Si quisiéramos usarlo más de una vez, lo mejor sería hacer uso de clases.<br>
+                    &lt;/p><br>
+
+                    <br>
+	                &lt;/body><br>
+	                &lt;/html>
+    	        </div>
+    	    </p>
+            <p>
+                Vista previa:
+                <div class="htmldefault">
+                    <h1 id="titulo">Sólo debe existir un título con este ID en todo el documento</h1>
+
+                    <p>
+                        Este texto corresponde a un párrafo simple. Si quisiéramos agregar estilos, podemos usar clases para así hace uso de los mismos estilos en distintos párrafos. De esta manera, no se rompería la semática de ID único.
+                    </p>
+                    <p>
+                        Sin embargo, el ID definido para el título sólo debe usarse una vez. Usarlo más de una vez se consideraría erróneo y no es buena práctica. Si quisiéramos usarlo más de una vez, lo mejor sería hacer uso de clases.
+                    </p>
+                </div>
+            </p>
+        <a href="./" class="aboton">Volver al índice</a>
+        </div>
+    </body>
+</html>
